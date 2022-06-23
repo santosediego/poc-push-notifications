@@ -58,7 +58,9 @@ https://firebase.google.com/docs/cloud-messaging/js/receive
 # Como executar o projeto
 
 ## Back end
-Pré-requisitos: Java 11
+Pré-requisitos:
+- Java 11
+- Configurar variável de ambiente GOOGLE_APPLICATION_CREDENTIALS referenciando o arquivo chave gerado na plataforma do Firebase
 
 ```bash
 # clonar repositório
