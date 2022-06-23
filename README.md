@@ -44,20 +44,20 @@ https://stackoverflow.com/questions/58386934/web-firebase-messaging-onmessage-no
 https://firebase.google.com/docs/cloud-messaging/js/receive
 
 
-# Tecnologias utilizadas
-## Back end
+## Tecnologias utilizadas
+### Back end
 - Java
 - Spring Boot
 - Maven
 - Firebase
 
-## Front end
+### Front end
 - React
 - Firebase
 
-# Como executar o projeto
+## Como executar o projeto
 
-## Back end
+### Back end
 Pré-requisitos:
 - Java 11
 - Configurar variável de ambiente GOOGLE_APPLICATION_CREDENTIALS referenciando o arquivo chave gerado na plataforma do Firebase
@@ -73,8 +73,21 @@ cd back-end
 ./mvnw spring-boot:run
 ```
 
-## Front end web
-Pré-requisitos: npm / yarn
+### Front end
+Pré-requisitos:
+- npm / yarn
+- Configurar o aquivo public/firebase-messaging-sw.js e o arquivo src/App.tsx a constante firebaseConfig com a configuração do SDK gerada para o projeto no Firebase:
+
+```javascript
+const firebaseConfig = {
+      apiKey: "",
+      authDomain: "",
+      projectId: "",
+      storageBucket: "",
+      messagingSenderId: "",
+      appId: ""
+    };
+```
 
 ```bash
 # clonar repositório
@@ -90,7 +103,7 @@ yarn install
 yarn start
 ```
 
-# Autor
+## Autor
 
 [Nelio Alves](https://github.com/acenelio "Perfil GitHub Nelio Alves")
 
